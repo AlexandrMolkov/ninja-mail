@@ -1,0 +1,114 @@
+.more-customers {
+
+    padding: 132px 69px 300px;
+    margin-bottom: -374px;
+
+    background-color: #f7f7f7;
+    
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -15%;
+        left: -18%;
+        
+        background-image: url(../img/background/slash_black.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width:768px) {
+        padding-top: 82px;
+        margin-bottom: -349px;
+        
+    }
+
+     @media (max-width: 576px) {
+        padding:  54px 10px 500px;
+    }
+
+     @media (max-width:320px) {
+        padding: 0;
+        padding-bottom: 295px;
+        margin-bottom: 0px;
+    }
+    
+
+    &__content{
+        
+        width: 100%;
+        height: 100%;
+
+        max-width: 940px;
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+
+
+
+        @media (max-width:768px) {
+            max-width: 615px; 
+         }
+    }
+
+    &__video {
+        width: 100%;
+
+        position: relative;
+
+        top: 0;
+        left: 0;
+        z-index: 5;
+
+        margin: 0 auto;
+
+    }
+
+    &__title{
+        font-family: 'Playfair Display';
+        font-weight: 900;
+        font-size: 60px;
+        color: white;
+        width: 100%;
+
+        text-align: center;
+
+        position: absolute;
+        z-index: 5;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+
+        margin-bottom: 60px;
+
+        @media (max-width: 1024px) {
+            font-size: calc(12px + 42 * (100vw / 1090));           
+        }
+    }
+    &__button{
+
+        position: absolute;
+        z-index: 5;
+        top: 63%;
+        left: 50%;
+        margin-left: -100px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            margin-left: -55px;
+        }
+
+        @media (max-width: 320px){
+            margin-left: -35px;
+            font-size: 7px;
+            width: 70px;
+            padding: 6px;
+            top: 60%;
+        }
+    }
+}

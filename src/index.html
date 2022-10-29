@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Open+Sans&family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>NinjaMail</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <main class="main">
 
             <section class="stunning stunning-mb-148">
-                <div class="stunning__container container">
+                <div class="stunning__container container_1100">
                     
                     <div class="stunning__content">
 
@@ -29,8 +29,11 @@
                         <p class="stunning__text">Create and launch email campaigns that captivate
                             your customers in just a few clicks.</p>
 
-                        <button class="stunning__button button button_green">TRY NOW</button>
-                        <button class="stunning__button button button_green_border">GET A DEMO</button>
+                        <div class="stunning__buttons">
+                            <button class="stunning__button button button_green">TRY NOW</button>
+                            <button class="stunning__button button button_green_border">GET A DEMO</button>
+                        </div>
+
 
                     </div>
                 </div>     
@@ -39,9 +42,9 @@
             <div class="more-customers">
 
                 <div class="more-customers__content">
-                    <video class="more-customers__video"  autoplay muted loop>
-                        <source src="video/Handshake.webm" type="video/webm">
-                        <source src="video/Handshake.mp4" type="video/mp4">
+                    <video class="more-customers__video" autoplay muted loop>
+                        <source src="video/Handshake.webm"type="video/webm">
+                        <source src="video/Handshake.mp4"type="video/mp4">
                     </video>
                     <h2 class="more-customers__title">Reach More Customers</h2>
                     <button class="more-customers__button button button_white">LEARN MORE</button>
@@ -50,9 +53,10 @@
             </div>
 
             <section class="source">
+                <div class="source__back"><div class="inner"></div></div>
                 <div class="source__content container">
 
-                    <article class="source__item item">
+                    <article class="source__item item animate" data-animate="from-left">
 
                             <img src="img/photo.png" alt="" class="item__img">
 
@@ -64,7 +68,7 @@
 
                     </article>
 
-                    <article class="source__item item item-mt-90">
+                    <article class="source__item item item-mt-90 animate from-right" data-animate="from-right">
 
                             <img src="img/photo2.png" alt="" class="item__img">
 
@@ -98,6 +102,7 @@
                 <div class="learn__row">
                     
                     <div class="learn__row-item card">
+                        <div class="gradient-layer"></div>
                         <div class="card__img-wrapper">
                             <img src="img/learn-photo1.png" alt="">
                         </div>
@@ -109,6 +114,7 @@
                     </div>
 
                     <div class="learn__row-item card">
+                        <div class="gradient-layer"></div>
                         <div class="card__img-wrapper">
                             <img src="img/learn-photo2.png" alt="">
                         </div>
@@ -120,6 +126,7 @@
                     </div>
 
                     <div class="learn__row-item card">
+                        <div class="gradient-layer"></div>
                         <div class="card__img-wrapper">
                             <img src="img/learn-photo3.png" alt="">
                         </div>
@@ -166,16 +173,16 @@
 
         </main>
 
-        <footer class="footer container">
+        <footer class="footer">
 
-            <div class="footer__content">
+            <div class="footer__content container">
                 <div class="footer__logo logo">
                     <img src="img/logo.png" alt="logo" class="logo__img">
                     <p class="logo__text">NinjaMail</p>
                 </div>
 
 
-                <div class="columns columns_mr_82">
+                <div class="columns columns_mr_40">
 
                     <ul class="columns__list column-1">
                         <li class="columns__li"><a href="#" class="columns__link">Features</a></li>
@@ -214,7 +221,6 @@
         </footer>
 
     </div>
-
     <script src="js/script.min.js"></script>
 </body>
 </html>

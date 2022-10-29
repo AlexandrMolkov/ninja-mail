@@ -13,12 +13,18 @@
     margin-left: auto;
     margin-right: 20px;
 
+    @media (max-width: 720px) {
+        display: flex;
+    }
 
-
-    @media (max-width: 425px) {
-
+    @media (max-width: 425px){
         width: 27px;
         height: 26px;
+        margin-right: 0px;
+    }
+
+    @media (max-width: 320px){
+        margin-right: 20px;
     }
 
     span{
@@ -73,18 +79,4 @@
         }
     }
 
-    @media (max-width: 720px) {
-        display: flex;
-        position: absolute;
-        top: 6%;
-        z-index: 11;
-        right: 0;
-    }
-
-    @media (max-width: 425px){
-        right: 10px;
-    }
-    @media (max-width: 320px){
-        right: -14px;
-    }
 }
