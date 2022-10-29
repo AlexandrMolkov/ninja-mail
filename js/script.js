@@ -10,23 +10,16 @@ function addWebP(callback) {
 addWebP(function (support) {
     if (support == true) {
         document.querySelector(`body`).classList.add(`webp`);
-        console.log(`support`)
-    } else {console.log(`NOTsupport`)}
+    }
     
 })
 
+/* document.querySelector('a').addEventListener('click',e=>e.preventDefault()) */
+
+document.body.addEventListener('submit',e=>e.preventDefault())
 
 
-
-
-
-
-
-
-
-
-
-
+{////// Burger
 const burger = document.querySelector(`.burg`)
 const burgerMenu = document.querySelector(burger.dataset.target)
 burger.addEventListener(`click`,(e)=>{
@@ -54,4 +47,32 @@ function overflowControl() {
 window.onresize = function() {
     overflowControl()
 }
+}
 
+
+
+//////// scroll animation
+{
+    const elements = document.querySelectorAll('.animate')
+
+    window.addEventListener('scroll',()=>{
+        const screenCenter =  (window.innerHeight/2) + window.scrollY
+
+        elements.forEach(el=>{
+            if(el.getBoundingClientRect().y < screenCenter) {
+                el.style.opacity = '1'
+                switch(el.dataset.animate){
+                    case 'from-left': el.classList.add('anim-from-left'); break;
+                    case 'from-right': el.classList.add('anim-from-right'); break;
+                }
+            } else {
+                el.style.opacity = '0'
+                switch(el.dataset.animate){
+                    case 'from-left': el.classList.remove('anim-from-left'); break;
+                    case 'from-right': el.classList.remove('anim-from-right'); break;
+                }
+            }
+        })
+
+    })
+}
