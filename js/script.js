@@ -22,6 +22,7 @@ document.body.addEventListener('submit',e=>e.preventDefault())
 {////// Burger
 const burger = document.querySelector(`.burg`)
 const burgerMenu = document.querySelector(burger.dataset.target)
+burgerMenu.style.overflow='auto'
 burger.addEventListener(`click`,(e)=>{
     e.preventDefault();
     burger.classList.toggle(`open`)
