@@ -1,0 +1,1 @@
+https://alexandrmolkov.github.io/ninja-mail/

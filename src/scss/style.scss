@@ -16,7 +16,7 @@
     @include container(1100px,8px)
 }
 .container-header{
-    @include container(1100px,0px)
+    @include container(1280px,8px)
 }
 
 body{
@@ -26,17 +26,16 @@ body{
 }
 
 .header{
-    padding: 18px 0;
+    padding-top: 38px;
     
     @media (max-width:768px) {
-        padding: 0;
         height: 66px;
     }
 
     &__content{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .logo{
@@ -97,10 +96,6 @@ body{
         margin-left: auto;
         padding-bottom: 12px;
 
-        @media (max-width:768px) {
-            padding-bottom: 0;
-
-         }
     }
     
 }
@@ -151,8 +146,10 @@ body{
             transform: scale(1.1);
         }
 
-        &:last-child{
-            padding-bottom: 70px;
+        @media (max-width: 768px){
+            &:last-child{
+                padding-bottom: 70px;
+            }
         }
         
     }
