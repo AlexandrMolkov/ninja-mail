@@ -946,6 +946,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 60px;
 }
 
 .columns_mr_40 {
@@ -971,12 +972,20 @@ body {
   border-bottom: #4BA87D 4px solid;
 }
 
-/* .column-2, 
-.column-4 {
-    @media (max-width: 320px) {
-        display: none;
-    }
-} */
+.copyright {
+  padding: 38px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #DBDBDB;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
 
 @-webkit-keyframes AnimBtn {
   0% {
